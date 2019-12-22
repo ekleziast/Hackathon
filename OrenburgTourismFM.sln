@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrenburgTourismFM", "OrenburgTourismFM\OrenburgTourismFM.csproj", "{22432C61-E82F-4E1E-BE09-B74F48610926}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{1A023049-A747-4FDE-BFA7-D6510FCBD49D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{22432C61-E82F-4E1E-BE09-B74F48610926}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22432C61-E82F-4E1E-BE09-B74F48610926}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22432C61-E82F-4E1E-BE09-B74F48610926}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A023049-A747-4FDE-BFA7-D6510FCBD49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A023049-A747-4FDE-BFA7-D6510FCBD49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A023049-A747-4FDE-BFA7-D6510FCBD49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A023049-A747-4FDE-BFA7-D6510FCBD49D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

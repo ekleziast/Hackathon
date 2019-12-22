@@ -10,5 +10,6 @@ namespace Database
         }
 
         public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Meeting> Meetings { get; set; }
     }
 }

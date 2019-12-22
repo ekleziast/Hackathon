@@ -11,6 +11,10 @@ namespace OrenburgTourismFM
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            using(Context db = new Context())
+            {
+                db.Accounts.ToList();
+            }
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(

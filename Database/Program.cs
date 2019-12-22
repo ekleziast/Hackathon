@@ -12,7 +12,7 @@ namespace Database
         {
             using (Context db = new Context())
             {
-
+                db.Accounts.ToList().ForEach(o => Console.WriteLine(o.Email));
             }
         }
     }

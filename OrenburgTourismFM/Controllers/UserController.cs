@@ -1,5 +1,4 @@
-﻿using Database;
-using Database.Model;
+﻿using OrenburgTourismFM.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +12,7 @@ namespace OrenburgTourismFM.Controllers
         [HttpPost]
         public HttpStatusCode Registration ([FromBody]Account account)
         {
-            if (!CheckRegistration(account))
-            {
-                return HttpStatusCode.BadRequest;
-            }
+            
             try
             {
                 using (Context db = new Context())
@@ -66,8 +62,8 @@ namespace OrenburgTourismFM.Controllers
             return true;
         }
 
-        [HttpPost]
-        public Account Login([FromUri]string email, [FromUri]string password)
+        [HttpGet]
+        public IHttpActionResult Login([FromUri]string email, [FromUri]string password)
         {
             try
             {
@@ -76,14 +72,14 @@ namespace OrenburgTourismFM.Controllers
                     var account = db.Accounts.Where(o => o.Email == email && o.Password == password).FirstOrDefault();
                     if(account == null)
                     {
-                        throw new HttpResponseException(HttpStatusCode.Forbidden);
+                        return NotFound();
                     }
-                    return account;
+                    return Ok(account);
                 }
             }
             catch
             {
-                throw new HttpResponseException(HttpStatusCode.BadGateway);
+                return NotFound();
             }
         }
     }

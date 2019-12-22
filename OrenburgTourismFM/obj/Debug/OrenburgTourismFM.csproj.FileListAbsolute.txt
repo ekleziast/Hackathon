@@ -48,7 +48,6 @@ C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\roslyn\vbc.r
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\roslyn\VBCSCompiler.exe
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\Antlr3.Runtime.dll
-C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\Database.exe
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\EntityFramework.dll
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\EntityFramework.SqlServer.dll
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -65,8 +64,6 @@ C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\System.Web.W
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\System.Web.WebPages.dll
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\System.Web.WebPages.Razor.dll
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\WebGrease.dll
-C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\Database.pdb
-C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\Database.exe.config
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\EntityFramework.xml
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\EntityFramework.SqlServer.xml
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\Newtonsoft.Json.xml
@@ -92,8 +89,11 @@ C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\ru\System.We
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\ru\System.Web.WebPages.resources.dll
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\ru\System.Web.WebPages.Deployment.resources.dll
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\bin\ru\System.Web.WebPages.Razor.resources.dll
-C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.csprojAssemblyReference.cache
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.csproj.CoreCompileInputs.cache
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.csproj.CopyComplete
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.dll
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.pdb
+C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.Migrations.initial.resources
+C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.Migrations.Addplace.resources
