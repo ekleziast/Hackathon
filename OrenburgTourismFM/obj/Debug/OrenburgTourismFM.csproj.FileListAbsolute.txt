@@ -97,3 +97,4 @@ C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\Orenbu
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.csproj.GenerateResource.cache
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.csprojAssemblyReference.cache
 C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.Migrations.Addplace.resources
+C:\Users\admin\source\repos\OrenburgTourismFM\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.Migrations.MeetingName.resources

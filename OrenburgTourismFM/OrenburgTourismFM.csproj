@@ -164,6 +164,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Context\DbConnection.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MeetingsController.cs" />
     <Compile Include="Controllers\PlacesController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -176,6 +177,10 @@
     <Compile Include="Migrations\201912220953333_Add place.cs" />
     <Compile Include="Migrations\201912220953333_Add place.Designer.cs">
       <DependentUpon>201912220953333_Add place.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912221625254_MeetingName.cs" />
+    <Compile Include="Migrations\201912221625254_MeetingName.Designer.cs">
+      <DependentUpon>201912221625254_MeetingName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
@@ -273,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912220953333_Add place.resx">
       <DependentUpon>201912220953333_Add place.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912221625254_MeetingName.resx">
+      <DependentUpon>201912221625254_MeetingName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,4 +1,5 @@
-﻿using OrenburgTourismFM.Models;
+﻿using Newtonsoft.Json;
+using OrenburgTourismFM.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace OrenburgTourismFM.Model
 {
@@ -15,6 +17,7 @@ namespace OrenburgTourismFM.Model
         [Key]
         public Guid ID { get; set; }
         
+        public string Name { get; set; }
         public DateTime MeetingDate { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }

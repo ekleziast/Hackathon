@@ -1,4 +1,5 @@
-﻿using OrenburgTourismFM.Model;
+﻿using Newtonsoft.Json;
+using OrenburgTourismFM.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace OrenburgTourismFM.Models
         public decimal Width { get; set; }
         public decimal Height { get; set; }
         public virtual PlaceType PlaceType { get; set; }
+        [JsonIgnore]
         public virtual IList<Meeting> Meetings { get; set; }
     }
 }
