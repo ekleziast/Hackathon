@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrenburgTourismFM", "OrenburgTourismFM\OrenburgTourismFM.csproj", "{22432C61-E82F-4E1E-BE09-B74F48610926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiderLibrary", "SpiderLibrary\SpiderLibrary.csproj", "{4B4E4703-A77D-4168-B6F6-8BB165C8B929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiderTest", "SpiderTest\SpiderTest.csproj", "{AD216FFD-5A12-4241-B24E-8B801DF90CE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{22432C61-E82F-4E1E-BE09-B74F48610926}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22432C61-E82F-4E1E-BE09-B74F48610926}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22432C61-E82F-4E1E-BE09-B74F48610926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4E4703-A77D-4168-B6F6-8BB165C8B929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4E4703-A77D-4168-B6F6-8BB165C8B929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4E4703-A77D-4168-B6F6-8BB165C8B929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4E4703-A77D-4168-B6F6-8BB165C8B929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD216FFD-5A12-4241-B24E-8B801DF90CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD216FFD-5A12-4241-B24E-8B801DF90CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD216FFD-5A12-4241-B24E-8B801DF90CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD216FFD-5A12-4241-B24E-8B801DF90CE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
