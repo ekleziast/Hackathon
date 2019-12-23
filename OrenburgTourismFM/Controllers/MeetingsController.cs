@@ -19,88 +19,18 @@ namespace OrenburgTourismFM.Controllers
         private Context db = new Context();
 
         // GET: api/Meetings
-        public IQueryable<Meeting> GetMeetings()
+        [ResponseType(typeof(List<Meeting>))]
+        public async Task<IHttpActionResult> GetMeetings()
         {
-            return db.Meetings;
-        }
-
-        // GET: api/Meetings/5
-        [ResponseType(typeof(Meeting))]
-        public async Task<IHttpActionResult> GetMeeting(Guid id)
-        {
-            Meeting meeting = await db.Meetings.FindAsync(id);
-            if (meeting == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(meeting);
-        }
-
-        // PUT: api/Meetings/5
-        [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutMeeting(Guid id, Meeting meeting)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != meeting.ID)
-            {
-                return BadRequest();
-            }
-
-            db.Entry(meeting).State = EntityState.Modified;
-
             try
             {
-                await db.SaveChangesAsync();
+                var uri = new Uri("https://www.2do2go.ru/oren/");
+                return Ok();
             }
-            catch (DbUpdateConcurrencyException)
+            catch
             {
-                if (!MeetingExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return StatusCode(HttpStatusCode.BadGateway);
             }
-
-            return StatusCode(HttpStatusCode.NoContent);
-        }
-
-        // POST: api/Meetings
-        [ResponseType(typeof(Meeting))]
-        public async Task<IHttpActionResult> PostMeeting(Meeting meeting)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            db.Meetings.Add(meeting);
-            await db.SaveChangesAsync();
-
-            return CreatedAtRoute("DefaultApi", new { id = meeting.ID }, meeting);
-        }
-
-        // DELETE: api/Meetings/5
-        [ResponseType(typeof(Meeting))]
-        public async Task<IHttpActionResult> DeleteMeeting(Guid id)
-        {
-            Meeting meeting = await db.Meetings.FindAsync(id);
-            if (meeting == null)
-            {
-                return NotFound();
-            }
-
-            db.Meetings.Remove(meeting);
-            await db.SaveChangesAsync();
-
-            return Ok(meeting);
         }
 
         protected override void Dispose(bool disposing)
