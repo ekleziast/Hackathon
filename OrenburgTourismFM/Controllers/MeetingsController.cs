@@ -18,14 +18,18 @@ namespace OrenburgTourismFM.Controllers
     {
         private Context db = new Context();
 
+        /// <summary>
+        /// Выдает первые 8 <see cref="Meeting"/>
+        /// </summary>
+        /// <returns>Список событий в ближайшие дни</returns>
         // GET: api/Meetings
         [ResponseType(typeof(List<Meeting>))]
         public async Task<IHttpActionResult> GetMeetings()
         {
             try
             {
-                var uri = new Uri("https://www.2do2go.ru/oren/");
-                return Ok();
+                List<Meeting> meetings = Spider.Meetings.GetMeetings();
+                return Ok(meetings);
             }
             catch
             {

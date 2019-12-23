@@ -12,8 +12,9 @@ namespace OrenburgTourismFM.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public decimal Width { get; set; }
-        public decimal Height { get; set; }
+        public string Street { get; set; }
+        public string Latitude { get; set; }
+        public string Longitude { get; set; }
         public virtual PlaceType PlaceType { get; set; }
         [JsonIgnore]
         public virtual IList<Meeting> Meetings { get; set; }

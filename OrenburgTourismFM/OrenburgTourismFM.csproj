@@ -46,10 +46,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.CssSelectors.1.0.2\lib\net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack.CssSelectors, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.CssSelectors.1.0.2\lib\net45\HtmlAgilityPack.CssSelectors.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -182,12 +188,22 @@
     <Compile Include="Migrations\201912221625254_MeetingName.Designer.cs">
       <DependentUpon>201912221625254_MeetingName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912231610164_Photo_Meeting.cs" />
+    <Compile Include="Migrations\201912231610164_Photo_Meeting.Designer.cs">
+      <DependentUpon>201912231610164_Photo_Meeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912231627064_Date_Meeting.cs" />
+    <Compile Include="Migrations\201912231627064_Date_Meeting.Designer.cs">
+      <DependentUpon>201912231627064_Date_Meeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Meeting.cs" />
     <Compile Include="Models\Place.cs" />
     <Compile Include="Models\PlaceType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spider\Meetings.cs" />
+    <Compile Include="Spider\Util\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -281,6 +297,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912221625254_MeetingName.resx">
       <DependentUpon>201912221625254_MeetingName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912231610164_Photo_Meeting.resx">
+      <DependentUpon>201912231610164_Photo_Meeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912231627064_Date_Meeting.resx">
+      <DependentUpon>201912231627064_Date_Meeting.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

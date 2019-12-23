@@ -9,10 +9,14 @@ namespace OrenburgTourismFM.Controllers
 {
     public class UserController : ApiController
     { 
+        /// <summary>
+        /// Метод позволяет зарегистрировать пользователя в системе
+        /// </summary>
+        /// <param name="account">Аккаунт для регистрации</param>
+        /// <returns>Код состояния</returns>
         [HttpPost]
         public HttpStatusCode Registration ([FromBody]Account account)
         {
-            
             try
             {
                 using (Context db = new Context())
@@ -62,6 +66,13 @@ namespace OrenburgTourismFM.Controllers
             return true;
         }
 
+        /// <summary>
+        /// Метод позволяет пользователю авторизоваться в системе
+        /// </summary>
+        /// <param name="email">Электронная почта</param>
+        /// <param name="password">Пароль</param>
+        /// <returns><see cref="Account"/>, если авторизация прошла успешно.
+        /// Иначе - код ошибки</returns>
         [HttpGet]
         public IHttpActionResult Login([FromUri]string email, [FromUri]string password)
         {
@@ -79,7 +90,7 @@ namespace OrenburgTourismFM.Controllers
             }
             catch
             {
-                return NotFound();
+                return StatusCode(HttpStatusCode.BadGateway);
             }
         }
     }
