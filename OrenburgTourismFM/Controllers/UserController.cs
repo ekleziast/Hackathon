@@ -73,7 +73,7 @@ namespace OrenburgTourismFM.Controllers
         /// <param name="password">Пароль</param>
         /// <returns><see cref="Account"/>, если авторизация прошла успешно.
         /// Иначе - код ошибки</returns>
-        [HttpGet]
+        [HttpPost]
         public IHttpActionResult Login([FromUri]string email, [FromUri]string password)
         {
             try
