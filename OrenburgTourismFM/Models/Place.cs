@@ -17,6 +17,8 @@ namespace OrenburgTourismFM.Models
         public string Latitude { get; set; }
         public string Longitude { get; set; }
 
+        public string Photo { get; set; }
+
         [ForeignKey("PlaceType")]
         public int? PlaceTypeID { get; set; }
         public virtual PlaceType PlaceType { get; set; }

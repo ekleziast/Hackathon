@@ -50,7 +50,7 @@ namespace Spider
 
                     // Дата начала события
                     HtmlNode timerNode = meetingDocument.DocumentNode.SelectSingleNode("//div[@class='timer-block_header']");
-                    string date = 
+                    string dateMeeting = 
                         timerNode.SelectSingleNode("//div[@class='timer-block_date']").InnerText 
                         + " " +
                         timerNode.SelectSingleNode("//div[@class='timer-block_time']").InnerText;
@@ -68,7 +68,7 @@ namespace Spider
                         Name = title,
                         PhotoSource = photoUrl,
                         Description = descriptionBuilder.ToString(),
-                        Date = date,
+                        Date = dateMeeting,
                         Cost = cost,
                         Place = new OrenburgTourismFM.Models.Place { 
                             Name = placeName,
