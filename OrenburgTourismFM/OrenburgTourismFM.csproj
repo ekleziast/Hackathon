@@ -196,14 +196,16 @@
     <Compile Include="Migrations\201912231627064_Date_Meeting.Designer.cs">
       <DependentUpon>201912231627064_Date_Meeting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912240929399_IDs.cs" />
+    <Compile Include="Migrations\201912240929399_IDs.Designer.cs">
+      <DependentUpon>201912240929399_IDs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Meeting.cs" />
     <Compile Include="Models\Place.cs" />
     <Compile Include="Models\PlaceType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spider\Meetings.cs" />
-    <Compile Include="Spider\Util\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -303,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201912231627064_Date_Meeting.resx">
       <DependentUpon>201912231627064_Date_Meeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912240929399_IDs.resx">
+      <DependentUpon>201912240929399_IDs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

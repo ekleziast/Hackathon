@@ -23,18 +23,9 @@ namespace OrenburgTourismFM.Controllers
         /// </summary>
         /// <returns>Список событий в ближайшие дни</returns>
         // GET: api/Meetings
-        [ResponseType(typeof(List<Meeting>))]
-        public async Task<IHttpActionResult> GetMeetings()
+        public IQueryable<Meeting> GetMeetings()
         {
-            try
-            {
-                List<Meeting> meetings = Spider.Meetings.GetMeetings();
-                return Ok(meetings);
-            }
-            catch
-            {
-                return StatusCode(HttpStatusCode.BadGateway);
-            }
+            return db.Meetings;
         }
 
         protected override void Dispose(bool disposing)

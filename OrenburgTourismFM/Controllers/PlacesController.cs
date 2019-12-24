@@ -45,7 +45,7 @@ namespace OrenburgTourismFM.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != place.Id)
+            if (id != place.ID)
             {
                 return BadRequest();
             }
@@ -83,7 +83,7 @@ namespace OrenburgTourismFM.Controllers
             db.Places.Add(place);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = place.Id }, place);
+            return CreatedAtRoute("DefaultApi", new { id = place.ID }, place);
         }
 
 
@@ -100,7 +100,7 @@ namespace OrenburgTourismFM.Controllers
 
         private bool PlaceExists(int id)
         {
-            return db.Places.Count(e => e.Id == id) > 0;
+            return db.Places.Count(e => e.ID == id) > 0;
         }
     }
 }

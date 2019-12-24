@@ -22,8 +22,20 @@ namespace OrenburgTourismFM.Model
         public string Description { get; set; }
         public string Cost { get; set; }
         public string PhotoSource { get; set; }
+
+        [ForeignKey("Place")]
+        public int PlaceID { get; set; }
         public virtual Place Place { get; set; }
+
         public virtual IList<Account> Accounts { get; set; }
+
+        public override string ToString()
+        {
+            return $"Название: {Name}\n" +
+                $"Дата проведения: {Date}\n" +
+                $"Описание мероприятия: {Description}\n" +
+                $"Стоимость: {Cost}";
+        }
 
     }
 }

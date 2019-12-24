@@ -205,3 +205,4 @@ C:\dev\stepup\hackathon\OrenburgTourismFM\bin\HtmlAgilityPack.xml
 C:\dev\stepup\hackathon\OrenburgTourismFM\bin\HtmlAgilityPack.CssSelectors.pdb
 C:\dev\stepup\hackathon\OrenburgTourismFM\bin\ru\EntityFramework.resources.dll
 C:\dev\stepup\hackathon\OrenburgTourismFM\bin\ru\EntityFramework.SqlServer.resources.dll
+C:\dev\stepup\hackathon\OrenburgTourismFM\obj\Debug\OrenburgTourismFM.Migrations.IDs.resources
