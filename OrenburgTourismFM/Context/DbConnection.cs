@@ -1,6 +1,7 @@
 ﻿namespace OrenburgTourismFM
 {
     using OrenburgTourismFM.Model;
+    using OrenburgTourismFM.Models;
     using System;
     using System.Data.Entity;
     using System.Linq;
@@ -21,8 +22,8 @@
 
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Meeting> Meetings { get; set; }
-
-        public System.Data.Entity.DbSet<OrenburgTourismFM.Models.Place> Places { get; set; }
+        public virtual DbSet<PlaceType> PlaceTypes { get; set; }
+        public virtual DbSet<Place> Places { get; set; }
     }
     
 }
