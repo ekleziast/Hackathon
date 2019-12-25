@@ -19,12 +19,16 @@ namespace OrenburgTourismFM.Controllers
         private Context db = new Context();
 
         /// <summary>
-        /// Выдает первые 8 <see cref="Meeting"/>
+        /// Выдает список <see cref="Meeting"/>
         /// </summary>
         /// <returns>Список событий в ближайшие дни</returns>
         // GET: api/Meetings
-        public IQueryable<Meeting> GetMeetings()
+        public IQueryable<Meeting> GetMeetings(int? count = null)
         {
+            if(count != null)
+            {
+                return db.Meetings.Take(count.Value);
+            }
             return db.Meetings;
         }
 
