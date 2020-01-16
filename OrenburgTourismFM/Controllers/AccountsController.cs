@@ -33,6 +33,7 @@ namespace OrenburgTourismFM.Controllers
             return CreatedAtRoute("DefaultApi", new { id = account.ID }, account);
         }
 
+        // Да, я знаю, что для авторизации тоже нужен POST:)
         // GET: api/Accounts
         [ResponseType(typeof(Account))]
         public async Task<IHttpActionResult> GetAccount(string email, string password)
