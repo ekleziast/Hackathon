@@ -16,12 +16,6 @@ namespace Spider
             var meetings = Meetings.GetMeetings(16);
             using (Context db = new Context())
             {
-                db.Meetings.ToList().ForEach(o => o.PhotoSource = o.PhotoSource.Replace("_w100_h140", ""));
-                db.SaveChanges();
-                //db.PlaceTypes.ToList().ForEach(o => db.PlaceTypes.Remove(o));
-                //db.Places.ToList().ForEach(o => db.Places.Remove(o));
-                //db.Meetings.ToList().ForEach(o => db.Meetings.Remove(o));
-                //db.SaveChanges();
                 int count = 0;
                 foreach(Meeting meeting in meetings)
                 {
